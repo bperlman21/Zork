@@ -39,7 +39,6 @@ namespace Zork
                     case Commands.SOUTH:
                     case Commands.EAST:
                     case Commands.WEST:
-                        Console.WriteLine($"You moved {command}.");
                         if (Move(command) == false)
                         {
                             Console.WriteLine("The way is shut!");
@@ -89,7 +88,9 @@ namespace Zork
 
         private static readonly string[,] Rooms =
         {
-            { "Forest", "West of House", "Behind House", "Clearing", "Canyon View" }
+            { "Rocky Trail", "South of House", "Canyon View" },
+            { "Forest", "West of House", "Behind House" },
+            { "Dense Forest", "North of House", "Clearing" }
         };
 
         private static readonly List<Commands> Directions = new List<Commands>
@@ -100,6 +101,6 @@ namespace Zork
         };
 
 
-        private static (int Row, int Column) Location = (0, 1);
+        private static (int Row, int Column) Location = (1, 1);
     }
 }
