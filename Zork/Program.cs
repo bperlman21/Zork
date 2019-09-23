@@ -100,7 +100,7 @@ namespace Zork
         {
             { new Room("Rocky Trail"), new Room("South of House"), new Room("Canyon View") },
             { new Room("Forest"), new Room("West of House"), new Room("Behind House") },
-            { new Room("Dense Forest"), new Room("North of House"), new Room("Clearing") }
+            { new Room("Dense Woods"), new Room("North of House"), new Room("Clearing") }
         };
 
         private static void InitializeRoomDescriptions()
@@ -120,8 +120,7 @@ namespace Zork
             roomMap["West of House"].Description = "This is an open field west of a white house, with a boarded front door."; 
             roomMap["Behind House"].Description = "You are behind the white house.  In one corner of the house there is a small window which is slightly ajar.";
 
-            roomMap["Dense Woods"] = Rooms[2, 0];
-            roomMap["Dense Woods"].Description = "This is a dimly lit forest, with large trees all around.  To the east, there appears to be sunlight."; 
+            roomMap["Dense Woods"].Description = "This is a dimly lit forest, with large trees all around.  To the east, there appears to be sunlight.";
             roomMap["North of House"].Description = "You are facing the north side of a white house.  There is no door here, and all the windows are barred.";  
             roomMap["Clearing"].Description = "You are in a clearing, with a forest surrounding you on the west and south.";  
         }
