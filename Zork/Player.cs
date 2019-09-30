@@ -39,5 +39,7 @@ namespace Zork
 
             return isvalidMove;
         }
+
+        public int Moves = 0;
     }
 }
